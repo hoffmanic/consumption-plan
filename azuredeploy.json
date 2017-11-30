@@ -10,10 +10,10 @@
     {
       "type": "Microsoft.Web/serverfarms",
       "apiVersion": "2015-04-01",
-      "name": "[variables('hostingPlanName')]",
+      "name": "[parameters('hostingPlanName')]",
       "location": "[resourceGroup().location]",
       "properties": {
-          "name": "[variables('hostingPlanName')]",
+          "name": "[parameters('hostingPlanName')]",
           "computeMode": "Dynamic",
           "sku": "Dynamic"
       }
